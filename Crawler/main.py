@@ -1,3 +1,5 @@
+#sudo pip3 install requests
+#sudo pip3 install requests-html
 import ptt
 
 def enumerate_meta():
