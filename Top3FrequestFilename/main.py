@@ -13,6 +13,9 @@ for url in urls :
     segs = url.split("/")
     files.append(segs[-1])
 
+answers={}
 fileset=set(files)
 for file in fileset :
-    print(file,files.count(file))
+    answers[file]=files.count(file)
+sorted_answers = sorted(answers.items(), key=lambda kv: kv[1], reverse=True)
+print(sorted_answers[:3])
